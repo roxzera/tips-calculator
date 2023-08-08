@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de gorjetas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="conteiner">
+        <div class="header">
+            <h1>TIPS calculator</h1>
+        </div>
+        <div class="main">
+            <p>How much was the bill?</p>
+            <form class="tipsForm" id="tipsForm">
+                <label for="coin">$: </label>
+                <input type="number" name="coin" id="coin" placeholder="$50" class="FormInputs" required>
+                <p>How was your service?</p>
+                <select name="aaaa" id="percentage" class="FormSelect" required>
+                    <option value="0.3">30% = very good</option>
+                    <option value="0.2">20% = good</option>
+                    <option value="0.15">15% = acceptable</option>
+                    <option value="0.1">10% = bad</option>
+                    <option value="0.05">5% = poor</option>
+                </select>
+                <p>How many peaple will split the bill?</p>
+                <input type="number" id="peaple" placeholder="2" class="FormInputs" required>
+                <label for="peaple">peaples</label>
+                <br>
+                <input type="submit" value="calcule" class="button" >
+            </form>
+        </div>
+        <div id="totalTips">
+            Tips total: $: <span id="tip">0.00</span>
+            <span id="each">each</span>
+        </div>
+    </div>
+    <script type="text/javascript" src="./scripts.js"></script>
+</body>
+</html>

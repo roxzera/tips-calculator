@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;200;400&display=swap');
+
+:root {
+    --primary-color: rgb(0, 58, 58);
+    --secondary-color: rgb(105, 105, 105);
+    --tertiary-color: Gainsboro;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-size: 15px;
+    font-family: Lato;
+}
+
+#conteiner {
+    height: 525px;
+    width: 360px;
+    margin: 100px auto;
+    background-color: #f7f7f7;
+    box-shadow: 3px 3px 0 gray;
+    border-radius: 20px;
+}
+
+.header {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.main {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.FormInputs {
+    background-color: white;
+    width: 40px;
+    padding: 8px 4px 8px 3px;
+}
+
+.FormSelect {
+    background-color: white;
+    width: 150px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.button {
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: white;
+    background-color: var(--primary-color);
+    display: block;
+    margin: 30px auto;
+    width: 200px;
+    height: 50px;
+}
+
+.button:hover {
+    background-color: rgb(0, 32, 12);
+    transition: 0.2s;
+    opacity: 0,7;
+}
+
+.FormInputs:focus {
+    border: 2px solid var(--primary-color);
+    outline: none;
+}
+
+.FormSelect:focus {
+    border: 2px solid var(--primary-color);
+    outline: none;
+}
+
+#totalTips {
+    color: black;
+    text-align: center;
+    margin-top: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
